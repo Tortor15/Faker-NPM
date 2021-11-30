@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="faker.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div id="title">
+        <h1 class="display-1" >Faker npm</h1>
+        <p class="subTitle h4" >The Prefect Library For Generating Massive <br> Amounts of Fake Data In The Browser and Node.js</p>
+        <a href="https://www.npmjs.com/package/faker" class="btn btn-danger"id="b">Click Here For Faker's Wesite</a>
+    </div>
+
+    <div class="row">
+        <div class="card" id="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Fake Username Generator</h5>
+              <h6 class="card-subtitle mb-2 text-muted py-2">See It Work Here </h6>
+              <p class="card-text py-3" id="p" >   </p>
+              <button type="submit" class="card-link " id="btn1">Click Here To Begin Generating Usernames</a>
+            </div>
+          </div>
+          <div class="card" id="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Fake Email Generator</h5>
+              <h6 class="card-subtitle mb-2 text-muted py-2">See It Work Here</h6>
+              <p class="card-text py-3"id="p2">  </p>
+              <button type="submit"  class="card-link  " id="btn">Click Here To Begin Generating Emails</button>
+              
+            </div>
+          </div>
+          <div class="card" id="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Fake Password Generator</h5>
+              <h6 class="card-subtitle mb-2 text-muted py-2">See It Work Here</h6>
+              <p class="card-text py-3" id="p3"></p>
+              <button type="submit" class="card-link " id="btn2">Click Here To Begin Generating Passwords</button>
+              
+            </div>
+          </div>
+    </div>
+</div>
+
+<section>
+    <div class="container intro">
+        <h1 class="h2 display-3">How To Use Faker?</h1>
+        <p class="py-2 p">Embed this code into you html or node.js file</p>
+        <blockquote>
+            <p>NODE.JS</p>
+            <code>
+                <pre>
+     var faker = require('faker');
+
+                    var randomName = faker.name.findName(); // Rowan Nikolaus
+                    var randomEmail = faker.internet.email(); // Kassandra.Haley@erich.biz
+                    var randomCard = faker.helpers.createCard(); // random contact card containing many properties
+                </pre>
+            </code>
+        </blockquote>
+
+        <blockquote>
+          <p>BROWSER</p>
+          <code>
+            <pre>
+              &lt;script src = "faker.js" type = "text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;
+  var randomName = faker.name.findName(); // Caitlyn Kerluke
+  var randomEmail = faker.internet.email(); // Rusty@arne.info
+  var randomCard = faker.helpers.createCard(); // random contact card containing many properties
+&lt;/script&gt;
+            </pre>
+          </code>
+        </blockquote>
+       
+    </div>
+    <hr>
+</section>
+
+<section>
+  <div class="container ">
+    <h1 class="display-3" id="h1">Different API Methods</h1>
+    <ul>
+      <li>address
+      <ul>
+      <li>zipCode</li>
+      <li>city</li>
+      <li>cityPrefix</li>
+      <li>citySuffix</li>
+      <li>streetName</li>
+      <li>streetAddress</li>
+      <li>streetSuffix</li>
+      <li>streetPrefix</li>
+      <li>secondaryAddress</li>
+      <li>county</li>
+      <li>country</li>
+      <li>countryCode</li>
+      <li>state</li>
+      <li>stateAbbr</li>
+      <li>latitude</li>
+      <li>longitude</li>
+      </ul>
+      </li>
+      <li>commerce
+      <ul>
+      <li>color</li>
+      <li>department</li>
+      <li>productName</li>
+      <li>price</li>
+      <li>productAdjective</li>
+      <li>productMaterial</li>
+      <li>product</li>
+      </ul>
+      </li>
+      <li>company
+      <ul>
+      <li>suffixes</li>
+      <li>companyName</li>
+      <li>companySuffix</li>
+      <li>catchPhrase</li>
+      <li>bs</li>
+      <li>catchPhraseAdjective</li>
+      <li>catchPhraseDescriptor</li>
+      <li>catchPhraseNoun</li>
+      <li>bsAdjective</li>
+      <li>bsBuzz</li>
+      <li>bsNoun</li>
+      </ul>
+      </li>
+      <li>database
+      <ul>
+      <li>column</li>
+      <li>type</li>
+      <li>collation</li>
+      <li>engine</li>
+      </ul>
+      </li>
+      <li>date
+      <ul>
+      <li>past</li>
+      <li>future</li>
+      <li>between</li>
+      <li>recent</li>
+      <li>month</li>
+      <li>weekday</li>
+      </ul>
+      </li>
+      <li>fake</li>
+      <li>finance
+      <ul>
+      <li>account</li>
+      <li>accountName</li>
+      <li>mask</li>
+      <li>amount</li>
+      <li>transactionType</li>
+      <li>currencyCode</li>
+      <li>currencyName</li>
+      <li>currencySymbol</li>
+      <li>bitcoinAddress</li>
+      <li>iban</li>
+      <li>bic</li>
+      </ul>
+      </li>
+      <li>hacker
+      <ul>
+      <li>abbreviation</li>
+      <li>adjective</li>
+      <li>noun</li>
+      <li>verb</li>
+      <li>ingverb</li>
+      <li>phrase</li>
+      </ul>
+      </li>
+      <li>helpers
+      <ul>
+      <li>randomize</li>
+      <li>slugify</li>
+      <li>replaceSymbolWithNumber</li>
+      <li>replaceSymbols</li>
+      <li>shuffle</li>
+      <li>mustache</li>
+      <li>createCard</li>
+      <li>contextualCard</li>
+      <li>userCard</li>
+      <li>createTransaction</li>
+      </ul>
+      </li>
+      <li>image
+      <ul>
+      <li>image</li>
+      <li>avatar</li>
+      <li>imageUrl</li>
+      <li>abstract</li>
+      <li>animals</li>
+      <li>business</li>
+      <li>cats</li>
+      <li>city</li>
+      <li>food</li>
+      <li>nightlife</li>
+      <li>fashion</li>
+      <li>people</li>
+      <li>nature</li>
+      <li>sports</li>
+      <li>technics</li>
+      <li>transport</li>
+      <li>dataUri</li>
+      </ul>
+      </li>
+      <li>internet
+      <ul>
+      <li>avatar</li>
+      <li>email</li>
+      <li>exampleEmail</li>
+      <li>userName</li>
+      <li>protocol</li>
+      <li>url</li>
+      <li>domainName</li>
+      <li>domainSuffix</li>
+      <li>domainWord</li>
+      <li>ip</li>
+      <li>ipv6</li>
+      <li>userAgent</li>
+      <li>color</li>
+      <li>mac</li>
+      <li>password</li>
+      </ul>
+      </li>
+      <li>lorem
+      <ul>
+      <li>word</li>
+      <li>words</li>
+      <li>sentence</li>
+      <li>slug</li>
+      <li>sentences</li>
+      <li>paragraph</li>
+      <li>paragraphs</li>
+      <li>text</li>
+      <li>lines</li>
+      </ul>
+      </li>
+      <li>name
+      <ul>
+      <li>firstName</li>
+      <li>lastName</li>
+      <li>findName</li>
+      <li>jobTitle</li>
+      <li>prefix</li>
+      <li>suffix</li>
+      <li>title</li>
+      <li>jobDescriptor</li>
+      <li>jobArea</li>
+      <li>jobType</li>
+      </ul>
+      </li>
+      <li>phone
+      <ul>
+      <li>phoneNumber</li>
+      <li>phoneNumberFormat</li>
+      <li>phoneFormats</li>
+      </ul>
+      </li>
+      <li>random
+      <ul>
+      <li>number</li>
+      <li>arrayElement</li>
+      <li>objectElement</li>
+      <li>uuid</li>
+      <li>boolean</li>
+      <li>word</li>
+      <li>words</li>
+      <li>image</li>
+      <li>locale</li>
+      <li>alphaNumeric</li>
+      </ul>
+      </li>
+      <li>system
+      <ul>
+      <li>fileName</li>
+      <li>commonFileName</li>
+      <li>mimeType</li>
+      <li>commonFileType</li>
+      <li>commonFileExt</li>
+      <li>fileType</li>
+      <li>fileExt</li>
+      <li>directoryPath</li>
+      <li>filePath</li>
+      <li>semver</li>
+      </ul>
+      </li>
+      </ul>
+  </div>
+</section>
+<div class="container">
+  <p id="pf">Faker is a very useful platform for generating massive amounts of data, for example, when creating a data base and you want to test it with out entering real users, Faker is 
+  a easy and lightweight way to go. For more information about Npm Faker <a href="https://www.npmjs.com/package/faker">see here.  </a> Faker has tons of different api methods which makes its
+  handy for generating all sorts of different types of data.</p>
+</div>
+<footer>
+  <div class="container">
+    <p class="foot">This code was made by Toto. However the information that is provided on this website is copyrighted by Faker at npmjs.com. If you learned anything on this 
+      website or thought it was useful in any way please give it a upvote and don't forget to follow for more awesome codes! Thanks for viewing my code and have a great day!
+    </p>
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src = "faker1.js" type = "text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js" integrity="sha256-QHdJObhDO++VITP6S4tMlDHRWMaUOk+s/xWIRgF/YY0=" crossorigin="anonymous"></script>
+
+</body>
+</html>
